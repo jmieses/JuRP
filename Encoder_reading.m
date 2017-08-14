@@ -1,8 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % This program run the motor upwards and downwards with the help of two functions: cw, and ccw. 
 % These two functions change the direction of the motor clockwise and counter-clockwise.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear all
 close all
 clc
@@ -18,11 +17,11 @@ writePWMDutyCycle(bbb, P14, 1); % set the duty cycle of the signal range 0 (0%) 
 writePWMFrequency(bbb, P14, 4500); % sets the frequency of the signal.
 writePWMVoltage(bbb, P14, 3); % voltage that produce the pwm signal (implicit duty cycle)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % setting pin 21 and 12 to change direction of the motor. 
 configureDigitalPin(bbb,P21,'output'); 
 configureDigitalPin(bbb,P12,'output');
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 counter = 0;
 
