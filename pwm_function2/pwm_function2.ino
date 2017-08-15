@@ -1,4 +1,5 @@
-
+// This code produce a PWM signal of a desired frequency controlled by the proper registers.
+// I applied changes to this code given to me by Xinhai. 
 #define ENABLE_PIN 12
 #define PWM_PIN 7
 #define ERROR_LED_PIN 13
